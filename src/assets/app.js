@@ -9,14 +9,13 @@ window.dash_clientside.clientside = {
         gsap.from("#t1", {scrollTrigger: {scrub: true}, x: 50});
         gsap.from("#man", {scrollTrigger: {scrub: true}, x: -200});
         gsap.from("#plants", {scrollTrigger: {scrub: true}, x: -100});
-       
         return window.dash_clientside.no_update; // Important for preventing update loops
     },
  
     scroll_to_map: function(selected_trail) {
         if(selected_trail) {
             setTimeout(function() {
-                document.getElementById('trail-map').scrollIntoView({
+                document.getElementById('mytrail-map').scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 });
@@ -25,4 +24,3 @@ window.dash_clientside.clientside = {
         return window.dash_clientside.no_update; // Prevent updating any Output
     }
 }
-
