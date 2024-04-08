@@ -66,7 +66,7 @@ app.layout = html.Div([
             html.Header([
                 html.A('InSync', href='#', className='logo'),
                 html.Ul([
-                    html.Li(dcc.Link('Home', href='https://lifeonland-home-0x5m.onrender.com')),
+                    html.Li(dcc.Link('Home', href='https://lifeonland-home-0x5m.onrender.com', target="_blank")),
                     html.Li(dcc.Link('My Trail', href='/my-trail')),
                     html.Li(dcc.Link('All Trails', href='/all-trails', className='active')),
                 ], className='navigation')
